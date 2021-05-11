@@ -17,4 +17,4 @@ spark.sparkContext.addPyFile("/spark/jars/delta-core_2.11-0.6.0.jar")
 from delta.tables import *
 
 data = spark.range(0, 5)
-data.write.format("delta").save("/tmp/delta-table")
+# data.write.format("delta").save("/tmp/delta-table")
