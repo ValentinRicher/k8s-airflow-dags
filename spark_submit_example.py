@@ -15,6 +15,8 @@ file_path = "/airflow.cfg"
 ###############################################
 now = datetime.now()
 
+print('SPARK SUBMIT')
+
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
