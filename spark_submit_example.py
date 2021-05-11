@@ -38,7 +38,7 @@ start = DummyOperator(task_id="start", dag=dag)
 spark_job = SparkSubmitOperator(
     task_id="spark_job",
     # Spark application path created in airflow and spark cluster
-    application="/test-chain.py",
+    application="./test-chain.py",
     name=spark_app_name,
     conn_id="spark_default",
     verbose=1,

@@ -1,6 +1,7 @@
 import pyspark
 import os
 
+print('test chain')
 
 exampleDir = os.path.join(os.environ["SPARK_HOME"], "jars")
 exampleJars = [os.path.join(exampleDir, x) for x in os.listdir(exampleDir)]
